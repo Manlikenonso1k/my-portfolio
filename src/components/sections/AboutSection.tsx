@@ -30,8 +30,8 @@ export function AboutSection() {
         </FadeIn>
 
         <AnimatedText 
-          text="With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!"
-          className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[560px] text-[clamp(1rem,2vw,1.35rem)] mb-16 sm:mb-20 md:mb-24"
+          text="Hi, I'm Nonso. For the past six years, I’ve been helping businesses build a strong, profitable presence on the web. I specialise in creating custom web solutions like tailored POS systems and CRM platforms that make running your day-to-day operations easier and more efficient. To me, web development isn't just about writing code; it's about solving real business problems. I rely on a solid tech stack of PHP, MySQL, Laravel, and Django to build fast, secure, and scalable platforms suited exactly to your needs. If you're looking to bring your business online, manage your sales better, or streamline how you connect with customers, I build the digital tools to make it happen."
+          className="text-[#D7E2EA] font-medium text-center leading-relaxed max-w-[800px] text-[clamp(1rem,1.8vw,1.35rem)] mb-16 sm:mb-20 md:mb-24"
         />
 
         <ContactButton />

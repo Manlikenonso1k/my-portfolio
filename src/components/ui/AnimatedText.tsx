@@ -25,12 +25,12 @@ export function AnimatedText({ text, className = "" }: AnimatedTextProps) {
         
         return (
           <span key={i} className="relative inline-block">
-            <span className="invisible">{char}</span>
+            <span className="invisible">{char === ' ' ? '\u00A0' : char}</span>
             <motion.span 
               className="absolute left-0 top-0"
               style={{ opacity }}
             >
-              {char}
+              {char === ' ' ? '\u00A0' : char}
             </motion.span>
           </span>
         );
