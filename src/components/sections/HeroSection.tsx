@@ -7,9 +7,19 @@ export function HeroSection() {
     <section className="h-screen flex flex-col overflow-x-clip relative">
       <FadeIn delay={0} y={-20} className="w-full">
         <nav className="flex justify-between items-center px-6 md:px-10 pt-6 md:pt-8 text-[#D7E2EA] font-medium uppercase tracking-wider text-sm md:text-lg lg:text-[1.4rem]">
-          {['About', 'Price', 'Projects', 'Contact'].map((link) => (
-            <a key={link} href={`#${link.toLowerCase()}`} className="hover:opacity-70 transition-opacity duration-200">
-              {link}
+          {[
+            { label: 'About',    href: '#about' },
+            { label: 'Price',    href: 'https://wa.me/2349036033056?text=Please%20what%27s%20the%20pricing%20on%20your%20websites', external: true },
+            { label: 'Projects', href: '#projects' },
+            { label: 'Contact',  href: '#contact' },
+          ].map(({ label, href, external }) => (
+            <a
+              key={label}
+              href={href}
+              {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              className="hover:opacity-70 transition-opacity duration-200"
+            >
+              {label}
             </a>
           ))}
         </nav>
