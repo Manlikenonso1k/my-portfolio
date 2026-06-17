@@ -99,7 +99,7 @@ function ProjectCard({ project, index, progress, total }: any) {
     <div className="h-[85vh] flex items-center justify-center sticky top-24 md:top-32 w-full">
       <motion.div
         style={{ scale, top: `calc(-5vh + ${index * 28}px)` }}
-        className={`relative w-full max-w-7xl ${roundedClass} border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 sm:p-6 md:p-8 flex flex-col gap-6`}
+        className={`relative w-full max-w-7xl ${roundedClass} border-2 border-[#D7E2EA] bg-[#0C0C0C] p-6 sm:p-8 md:p-10 flex flex-col gap-6`}
       >
         {/* Top Header Row */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-0">
